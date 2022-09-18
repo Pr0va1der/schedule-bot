@@ -209,7 +209,7 @@ def parse_schedule_week(week, group):
             time = lesson_element.find("div", class_="time").text
             name = lesson_element.find("div", class_="name").text
             prep = lesson_element.find("div", class_="prep").text
-            text += f"*{number} {name} {type} {cab}*\n{prep} {time}\n"
+            text += f"{number} {name} {type} {cab}\n{prep} {time}\n"
         text += "\n"
     return text
 
